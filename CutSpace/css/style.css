@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-
+    margin: 0;
 }
 
 .container {
@@ -33,6 +33,26 @@ body {
 .logo-box {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     padding: 99px 0;
     gap: 95px;
+    justify-content: center;
+}
+
+@media (max-width:880px) {
+    .navbar-raw {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-raw a {
+        margin-bottom: 35px;
+    }
+
+    .navbar-links {
+        margin: 0 75px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 }
