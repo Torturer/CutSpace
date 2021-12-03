@@ -136,7 +136,7 @@ body {
         top: 18%;
         z-index: 2;
     }
-    
+
     .text {
         width: auto;
     }
@@ -147,7 +147,7 @@ body {
         flex-direction: column;
     }
 
-    .form-input{
+    .form-input {
         padding: 17px 0 17px 70px;
         margin-bottom: 45px;
     }
@@ -211,6 +211,10 @@ body {
 }
 
 @media (max-width: 400px) {
+    body {
+        margin: 10px;
+    }
+
     .main-heading {
         width: auto;
         font-size: 17px;
@@ -224,12 +228,32 @@ body {
         flex-direction: column-reverse;
     }
 
-    
+
     .form-container:before {
         left: 15px;
     }
 
     .form-input {
-        padding: 17px 0 17px 50px;
+        padding: 17px 32%;
+    }
+
+    .navbar-raw {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: normal;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        margin: 0 15px;
+        gap: 0;
+    }
+
+    .intro-row .col {
+        max-width: 90%;
+    }
+
+    .logo-box {
+        padding: 15px 0;
     }
 }
