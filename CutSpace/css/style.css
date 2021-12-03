@@ -186,6 +186,14 @@ body {
         justify-content: center;
     }
 
+    .logo-box {
+        gap: 40px;
+    }
+
+    .navbar-links {
+        gap: 15px;
+    }
+
 }
 
 @media (max-width: 600px) {
