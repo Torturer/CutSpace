@@ -1,3 +1,5 @@
+@import url(all.min.css);
+
 * {
     box-sizing: border-box
 }
@@ -32,15 +34,6 @@ body {
 .navbar-links .active {
     font-weight: 700;
     color: #F78434;
-}
-
-.logo-box {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 99px 0;
-    gap: 95px;
-    justify-content: center;
 }
 
 /* Start Intro block */
@@ -129,6 +122,159 @@ body {
 }
 
 /* End Intro block */
+
+/* Start logobar style */
+.logo-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    gap: 95px;
+    justify-content: center;
+}
+
+.logobar-main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.img-box {
+    display: flex;
+}
+
+.img-box img {
+    margin-right: 30px;
+}
+
+.img-box img:first-of-type {
+    margin-left: -250px;
+}
+
+.logobar-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logobar-header {
+    max-width: 375px;
+    font-size: 42px;
+    letter-spacing: 0.8px;
+    line-height: 148%;
+}
+
+.logobar-text p {
+    max-width: 375px;
+    font-size: 16px;
+    letter-spacing: 1.15px;
+}
+
+.logobar-text .text:last-of-type {
+    margin-bottom: 40px;
+}
+
+
+.text-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.logobar-text .btn {
+    max-width: 170px;
+    padding: 17px 38px;
+}
+
+.slime-box {
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    /* outline: none; */
+    padding: 32px 29px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    gap: 20px;
+    position: absolute;
+    top: 325px;
+    left: 210px;
+}
+
+.slime-box .img {
+    margin-top: 16px;
+    display: block;
+    flex: 0 0 45px;
+}
+
+.slime-header {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+}
+
+.slime-text-box {
+    font-size: 16px;
+    line-height: 169%;
+    letter-spacing: 1.15px;
+}
+
+/* End Logobar style */
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 85px 0;
+}
+
+.footer-most-links {
+    display: flex;
+    gap: 85px;
+}
+
+.footer-heading {
+    font-size: 21px;
+    color: #323232;
+    margin: 10px 0 20px;
+    letter-spacing: 0.5px;
+}
+
+.foote-link a {
+    color: #323232;
+    text-decoration: none;
+}
+
+.social-links {
+    margin-top: 40px;
+}
+
+.social-links a {
+    margin-right: 30px;
+    font-size: 23px;
+}
+
+.fa-facebook-square {
+    color: #4267B2;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
+
+.fa-linkedin-in {
+    color: #006699;
+}
+
+.footer-row .col:first-of-type .text {
+    max-width: 300px;
+}
 
 @media (max-width: 1000px) {
 
