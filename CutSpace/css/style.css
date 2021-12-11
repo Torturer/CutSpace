@@ -432,6 +432,10 @@ body {
     .intro-row .col {
         max-width: 90%;
     }
+
+    .logo-box img {
+        max-width: 150px;
+    }
 }
 
 @media (max-width: 400px) {
