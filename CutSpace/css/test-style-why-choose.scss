@@ -18,20 +18,6 @@ $black-color: #323232;
     line-height: 1.48;
 }
 
-.col-img:hover {
-    .first-image-svg {
-        circle {
-            fill: rgba(247, 132, 52, 1) !important;
-        }
-    }
-    .last-image-svg {
-        path, ellipse {
-            fill: #FFFFFF !important;
-        }
-    }
-}
-
-
 .col-box {
     display: flex;
     justify-content: space-between;
@@ -51,6 +37,7 @@ $black-color: #323232;
             .first-image-svg {
                 circle {
                     fill: rgba(88, 190, 191, 0.2);
+                    transition: 0.4s;
                 }
             }
             .last-image-svg {
@@ -61,6 +48,7 @@ $black-color: #323232;
                 path,
                 ellipse {
                     fill: #58bebf;
+                    transition: 0.4s;
                 }
             }
         }
@@ -84,3 +72,17 @@ $black-color: #323232;
         }
     }
 }
+
+.col-img:hover {
+    .first-image-svg {
+        circle {
+            fill: rgba(247, 132, 52, 1) !important;
+        }
+    }
+    .last-image-svg {
+        path, ellipse {
+            fill: #FFFFFF !important;
+        }
+    }
+}
+
