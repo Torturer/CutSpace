@@ -1,0 +1,27 @@
+@import url(all.min.css);
+@import "global-variables";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+@import "header";
+@import "logobar";
+@import "intro-block";
+@import "start-using";
+@import "why-choose";
+@import "we-serve";
+@import "nice-words";
+@import "exp-sec";
+@import "footer";
+@import "style-adaptiv";

@@ -1,0 +1,25 @@
+.navbar-raw {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 42px;
+}
+
+.navbar-links {
+    a {
+        text-decoration: none;
+        color: $black-color;
+    }
+}
+
+.navbar-links {
+    .active {
+        font-weight: 700;
+        color: $orange;
+    }
+}

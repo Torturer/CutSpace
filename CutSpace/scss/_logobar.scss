@@ -1,0 +1,115 @@
+.logo-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    gap: 95px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.logobar-main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.img-box {
+    display: flex;
+}
+
+.img-box {
+    img {
+        margin-right: 30px;
+    }
+}
+
+.img-box {
+    img:first-of-type {
+        margin-left: -250px;
+    }
+}
+
+.logobar-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logobar-header {
+    max-width: 375px;
+    font-size: 42px;
+    letter-spacing: 0.8px;
+    line-height: 148%;
+}
+
+.logobar-text {
+    p {
+        max-width: 375px;
+        font-size: 16px;
+        letter-spacing: 1.15px;
+    }
+}
+
+.logobar-text {
+    .text:last-of-type {
+        margin-bottom: 40px;
+    }
+}
+
+.text-btn {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.logobar-text {
+    .btn {
+        max-width: 170px;
+        padding: 17px 0px;
+        text-align: center;
+        .text {
+            color: white;
+        }
+    }
+}
+
+.wrapper {
+    overflow: hidden;
+    max-width: 300px;
+    position: absolute;
+    top: 325px;
+    left: 210px;
+}
+
+.slime-box {
+    background: #ffffff;
+    box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    padding: 32px 29px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    gap: 20px;
+}
+
+.slime-box {
+    .img {
+        margin-top: 16px;
+        display: block;
+        flex: 0 0 45px;
+    }
+}
+
+.slime-header {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+}
+
+.slime-text-box {
+    font-size: 16px;
+    line-height: 169%;
+    letter-spacing: 1.15px;
+}

@@ -1,0 +1,105 @@
+.we-serve {
+    position: relative;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+    }
+
+    .bg {
+        min-width: 100%;
+        min-height: 705px;
+        background-color: #f5f6fa;
+        position: absolute;
+        transform: translateY(-100%);
+        top: 360px;
+        z-index: -1;
+    }
+}
+
+.ws-tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ws-header {
+        font-size: 42px;
+        font-weight: bold;
+        line-height: 1.48;
+        letter-spacing: 0.8px;
+        color: $black-color;
+        margin-bottom: 10px;
+    }
+    .text {
+        width: auto;
+        line-height: 1.7;
+        letter-spacing: 1.15px;
+        margin-bottom: 45px;
+        margin: 0;
+    }
+}
+
+.ws-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 110px;
+    .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 540px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 40px 0;
+        transition: 0.5s;
+        .text {
+            max-width: 365px;
+            text-align: center;
+            margin: 0 0 25px 0;
+            transition: 0.5s;
+        }
+        .btn {
+            text-decoration: none;
+            background-color: white;
+            color: $orange;
+            transition: 0.5s;
+        }
+    }
+}
+
+.ws-box-tittle {
+    margin: 0;
+    letter-spacing: 0.8px;
+    color: $black-color;
+    font-size: 42px;
+    transition: 0.5s;
+}
+
+.we-img {
+    margin-bottom: 15px;
+    path {
+        fill: $orange;
+        transition: 0.5s;
+    }
+}
+
+.ws-box {
+    .col:hover {
+        background-color: $orange;
+        .ws-box-tittle {
+            color: white;
+        }
+        .text {
+            color: white;
+        }
+        .we-img {
+            path {
+                fill: white;
+            }
+        }
+    }
+}
