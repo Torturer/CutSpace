@@ -43,6 +43,7 @@
 .ws-box {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
     margin-bottom: 110px;
@@ -51,7 +52,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 540px;
+        min-width: 540px;
         border-radius: 10px;
         background-color: white;
         padding: 40px 0;
@@ -63,10 +64,7 @@
             transition: 0.5s;
         }
         .btn {
-            text-decoration: none;
-            background-color: white;
-            color: $orange;
-            transition: 0.5s;
+            @include btn-style(1);
         }
     }
 }
@@ -100,6 +98,74 @@
             path {
                 fill: white;
             }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .ws-box {
+        .second {
+            background-color: $orange;
+            .ws-box-tittle {
+                color: white;
+            }
+            .text {
+                color: white;
+            }
+            .we-img {
+                path {
+                    fill: white;
+                }
+            }
+            &:hover {
+                background-color: white;
+                .ws-box-tittle {
+                    color: $black_color;
+                }
+                .text {
+                    color: $black-color;
+                }
+                .we-img {
+                    path {
+                        fill: $black-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .ws-box {
+        margin-bottom: 30px;
+        .col {
+            min-width: 100%;
+            .text {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .we-serve {
+        .bg {
+            min-height: 860px;
+        }
+    }
+
+    .ws-tittle {
+        .ws-header {
+            text-align: center;
+        }
+        .text {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .ws-tittle {
+        .ws-header {
+            font-size: 30px;
         }
     }
 }

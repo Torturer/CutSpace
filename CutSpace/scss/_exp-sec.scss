@@ -2,12 +2,14 @@
     background-image: url(../img/exp-bg.svg);
     background-size: cover;
     background-position: top;
+    margin-top: 40px;
 }
 
 .exp-row {
     position: relative;
     min-height: 490px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .exp-img {
@@ -15,6 +17,7 @@
     bottom: 0;
     z-index: 10;
     left: 50%;
+    max-width: 100%;
 }
 
 .exp-col {
@@ -35,10 +38,50 @@
     .btn {
         margin-bottom: 55px;
         text-decoration: none;
-        background-color: white;
-        color: $black_color;
+        @include btn-style(1);
     }
 }
+
+@media (max-width: 1000px) {
+    .exp-row {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .exp-col {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            margin: 20px 0 15px 0;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+
+    .exp-img {
+        order: 1;
+        position: static;
+    }
+}
+
+@media (max-width: 400px) {
+    .exp-col {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .exp-img {
+        order: 1;
+        position: static;
+    }
+}
+
 
 // .exp-sec {
 // }

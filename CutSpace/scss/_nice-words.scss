@@ -30,7 +30,9 @@
 .column-box {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 100px;
+    gap: 30px;
     video {
         width: 100%;
     }
@@ -84,5 +86,34 @@
                 color: $orange;
             }
         }
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-box {
+        flex-direction: column;
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+
+    .column-box {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-box {
+        margin-bottom: 0;
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .column-box {
+        margin-bottom: 30px;
     }
 }

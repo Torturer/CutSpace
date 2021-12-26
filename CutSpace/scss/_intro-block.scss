@@ -64,18 +64,10 @@
     color: #bbb;
 }
 
-.btn {
-    background: #f78434;
-    border-radius: 50px;
-    color: white;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 18px 37px 16px;
-    border: none;
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
+.intro-img {
+    max-width: 100%;
 }
+
 
 .form-container {
     .btn {
@@ -83,5 +75,6 @@
         top: 50%;
         transform: translateY(-50%);
         right: 0;
+        @include btn-style(2);
     }
 }

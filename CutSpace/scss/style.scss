@@ -15,6 +15,40 @@ body {
     margin: 0 auto;
 }
 
+.btn {
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 18px 37px 16px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+// code = 2 - orange style
+// code = 1 - white style
+@mixin btn-style($code) {
+    @if $code != 1 {
+        background-color: $orange;
+        color: white;
+        &:hover {
+            background-color: darken($orange, 10%);
+        }
+    }
+    @else if $code != 2 {
+        background-color: white;
+        color: $black_color;
+        &:hover {
+            background-color: darken(white, 10%);
+        }
+    } @else {
+        @error "Unknown direction #{$code}.";
+    }
+}
+
 @import "header";
 @import "logobar";
 @import "intro-block";
